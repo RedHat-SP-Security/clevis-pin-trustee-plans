@@ -1,0 +1,16 @@
+# used in
+# https://gitlab.com/redhat/centos-stream/clevis-pin-trustee
+
+summary: rpmverify test
+
+execute:
+    how: tmt
+
+discover:
+
+  - name: test
+    how: shell
+    tests:
+      - name: rpmverify
+        test: 'rpmverify $(rpm -qa | grep clevis-pin-trustee)'
+        duration: 2m
