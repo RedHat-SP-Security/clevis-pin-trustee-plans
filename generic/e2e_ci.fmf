@@ -13,7 +13,6 @@ discover:
   - name: Upstream_tests_clevis_pin_trustee
     how: fmf
     url: https://github.com/RedHat-SP-Security/trustee-tests
-    ref: master
     filter: tag:CI-Tier-1
 
 execute:
